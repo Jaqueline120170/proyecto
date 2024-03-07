@@ -1,0 +1,56 @@
+PRIMERO - Se generará una vista index.html, con un enlace que nos haga navegar a la vista vistaJsHead.html. Esta contendrá el siguiente código:
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ubicación del código en JavaScript</title>
+    <script src="script/alert.js"></script>
+</head>
+<body>
+    <a href="index.html">Menú</a>
+</body>
+</html>
+
+PREGUNTA - ¿Qué está haciendo esta vista?
+
+
+El archivo alert.js contendrá la generación de alerta vista en el ejemplo anterior.
+let num1 = 10;
+alert(num1);
+
+
+
+SEGUNDO - Desde la vista index.html, a través de otro enlace, se navegará a la vista vistaJsBody.html. Esta contendrá el siguiente código:
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ubicación del código en JavaScript</title>
+    <script src="script/alertFunction.js"></script>
+</head>
+<body>
+    <a href="index.html">Menú</a>
+    <br>
+    <a href="script/alert.js">alert.js</a>
+    <br>
+    <button onclick="generarAlerta()">alertFunction.js</button>
+    <br>
+</body>
+</html>
+
+PREGUNTA - ¿Qué está haciendo esta vista?
+
+
+PREGUNTA - ¿Qué diferencia hay entre la línea alert.js y la línea alertFunction.js?
+
+
+
+
+El archivo alertFunction.js contiene el siguiente código:
+
+function generarAlerta(){
+    let num1 = 10;
+    alert(num1);
+}

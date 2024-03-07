@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="script/index.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Array</title>
+</head>
+<body>
+
+<script>
+  
+    var miArray = ["Valor 0", "Valor 1", "Valor 2", "Valor 3", "Valor 4"];
+
+    function obtenerValor() {
+    
+        var posicion = prompt("Ingrese un número para obtener el valor correspondiente:");
+
+    
+        if (isNaN(posicion)) {
+            alert("Por favor, ingrese un número válido.");
+            return;
+        }
+
+
+        posicion = parseInt(posicion);
+
+
+        if (posicion < 0 || posicion >= miArray.length) {
+            alert("Número fuera de los límites permitidos.");
+            return;
+        }
+
+
+        alert("El valor en la posición " + posicion + " es: " + miArray[posicion]);
+    }
+
+
+    obtenerValor();
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
